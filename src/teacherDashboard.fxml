@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="999.0" stylesheets="@CSS/Dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacherController">
+    <children>
+        <Pane prefHeight="655.0" prefWidth="1004.0" stylesheets="@CSS/Dashboard.css" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="dashboardLabel" layoutX="83.0" layoutY="14.0" text="TEACHER DASHBOARD" textAlignment="CENTER" textFill="#1a00ff">
+                    <font>
+                        <Font name="MV Boli" size="24.0" />
+                    </font>
+                </Label>
+                <SplitPane fx:id="mainSplitPane" dividerPositions="0.2133611691022965" layoutY="58.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="999.0" stylesheets="@CSS/Dashboard.css">
+                    <items>
+                        <AnchorPane fx:id="sideMenuPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="264.0" stylesheets="@CSS/Dashboard.css">
+                            <children>
+                                <Button fx:id="profileButton" layoutX="-1.0" layoutY="18.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#loadProfile" prefHeight="43.0" prefWidth="227.0" text="Profile" textFill="#cf00ff">
+                                    <font>
+                                        <Font name="Perpetua Bold Italic" size="19.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@ICONS/profile.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="coursesButton" layoutY="71.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#displayAllCourses" prefHeight="43.0" prefWidth="227.0" text="Courses" textFill="#cf00ff">
+                                    <font>
+                                        <Font name="Perpetua Bold Italic" size="19.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@ICONS/course.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="courseListingButton" graphicTextGap="10.0" layoutY="121.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleCourseListing" prefHeight="43.0" prefWidth="236.0" text="Course Alocated" textFill="#cf00ff">
+                                    <font>
+                                        <Font name="Perpetua Bold Italic" size="19.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@ICONS/course_listing.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="logoutButton" graphicTextGap="0.0" layoutY="514.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logout" prefHeight="43.0" prefWidth="236.0" text="Logout" textFill="#cf00ff">
+                                    <font>
+                                        <Font name="Perpetua Bold Italic" size="19.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@ICONS/check-out.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="profilePane" minHeight="0.0" minWidth="0.0" prefHeight="595.0" prefWidth="697.0" stylesheets="@CSS/Dashboard.css" />
+                    </items>
+                </SplitPane>
+                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="28.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@ICONS/teacher_db.png" />
+                    </image>
+                </ImageView>
+                <Line endX="100.0" layoutX="-10.0" layoutY="28.0" rotate="90.0" startX="70.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="3.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

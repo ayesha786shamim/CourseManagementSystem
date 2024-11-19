@@ -1,0 +1,103 @@
+/* styles.css */
+
+/* Import Montserrat font */;
+
+/* General pane background */
+Pane {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #1e1e1e 0%, #2c2c2c 100%);
+}
+
+
+.bkPane {
+    -fx-background-image: url('../ICONS/bk_login1.jpg'); /* Path to your image */
+    -fx-background-size: cover; /* Cover the entire pane */
+    -fx-background-repeat: no-repeat; /* Don't repeat the image */
+    -fx-background-position: center; /* Center the image */
+}
+
+/* Label styling */
+Label {
+    -fx-text-fill: white;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: normal;
+}
+
+/* Email, Password, and Role labels */
+#emailLabel, #passwordLabel, #roleLabel {
+    -fx-text-fill: white;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: normal;
+}
+
+/* Text field styling */
+#emailField, #passwordField {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #aaaaaa;
+    -fx-border-color: #555555;
+    -fx-border-radius: 5px;
+    -fx-padding: 2 2 2 2;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: normal;
+}
+
+/* Choice box styling */
+#roleChoiceBox {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-border-color: #555555;
+    -fx-padding: 1 2 1 2;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: normal;
+}
+
+
+/* Button styling */
+Button {
+    -fx-background-color: #4a4a4a;
+    -fx-text-fill: white;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-size: 17px;
+    -fx-font-weight: normal;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+    -fx-background-radius: 25; /* Rounded corners for the button */
+    -fx-border-radius: 25; /* Rounded border for the button */
+    -fx-padding: 10 20 10 20;
+}
+
+Button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1); /* Slightly visible background on hover */
+    -fx-border-color: #888888; /* Lighter border color on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 2); /* Enhanced shadow on hover */
+}
+
+/* Header pane styling */
+Pane#headerPane {
+    -fx-background-color: #333333;
+}
+
+/* Header label styling */
+Label#headerLabel {
+    -fx-text-fill: #ae00ff;
+    -fx-font-size: 25px;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: normal;
+}
+
+/* Welcome label styling */
+Label#welcomeLabel {
+    -fx-text-fill: white;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: bold;
+}
+
+
+/* styles.css */
+
+.transparent_pane {
+    -fx-background-color: rgba(255, 255, 255, 0.1);/* Semi-transparent background color */
+    -fx-background-radius: 10px; /* Rounded corners */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); /* Shadow effect */
+    -fx-background-insets: 5; /* Insets to ensure shadow is visible */
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="595.0" prefWidth="697.0" stylesheets="@CSS/slider-panes.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewWarningCoordinatorController">
+    <children>
+        <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="697.0" stylesheets="@CSS/slider-panes.css">
+            <children>
+                <Label layoutX="234.0" layoutY="14.0" text="WARNINGS" textFill="#1c00f4">
+                    <font>
+                        <Font name="MV Boli" size="24.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="warningTable" layoutX="60.0" layoutY="162.0" prefHeight="361.0" prefWidth="577.0">
+                    <columns>
+                        <TableColumn fx:id="warningColumn" prefWidth="300.0" text="Warning" />
+                        <TableColumn fx:id="dateColumn" prefWidth="276.0" text="Date" />
+                    </columns>
+                </TableView>
+                <Label layoutX="70.0" layoutY="110.0" text="User ID" textFill="#1c00f4">
+                    <font>
+                        <Font name="MV Boli" size="19.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="userIdField" layoutX="158.0" layoutY="106.0" />
+                <Button layoutX="422.0" layoutY="109.0" mnemonicParsing="false" onAction="#onEnterButtonClicked" text="ENTER" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

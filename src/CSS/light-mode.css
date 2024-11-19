@@ -1,0 +1,93 @@
+/* light-mode.css */
+
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+/* General pane background */
+Pane {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #ffffff 0%, #f0f0f0 100%);
+}
+
+/* Label styling */
+Label {
+    -fx-text-fill: black;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: normal;
+}
+
+/* Email, Password, and Role labels */
+#emailLabel, #passwordLabel, #roleLabel {
+    -fx-text-fill: black;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: normal;
+}
+
+/* Text field styling */
+#emailField, #passwordField {
+    -fx-background-color: #dddddd;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #555555;
+    -fx-border-color: #aaaaaa;
+    -fx-border-radius: 5px;
+    -fx-padding: 2 2 2 2;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: normal;
+}
+
+/* Choice box styling */
+#roleChoiceBox {
+    -fx-background-color: #dddddd;
+    -fx-text-fill: black;
+    -fx-border-color: #aaaaaa;
+    -fx-padding: 5 10 5 10;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: normal;
+}
+
+/* Button styling */
+Button {
+    -fx-background-color: #cccccc;
+    -fx-text-fill: black;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-size: 17px;
+    -fx-font-weight: normal;
+    -fx-border-color: #aaaaaa;
+    -fx-border-width: 1px;
+    -fx-background-radius: 25; /* Rounded corners for the button */
+    -fx-border-radius: 25; /* Rounded border for the button */
+    -fx-padding: 10 20 10 20;
+}
+
+Button:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.1); /* Slightly visible background on hover */
+    -fx-border-color: #888888; /* Lighter border color on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 2); /* Enhanced shadow on hover */
+}
+
+/* Header pane styling */
+Pane#headerPane {
+    -fx-background-color: #dddddd;
+}
+
+/* Header label styling */
+Label#headerLabel {
+    -fx-text-fill: #1a00ff;
+    -fx-font-size: 25px;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: normal;
+}
+
+/* Welcome label styling */
+Label#welcomeLabel {
+    -fx-text-fill: black;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: bold;
+}
+
+/* Transparent pane styling */
+.transparent_pane {
+    -fx-background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background color */
+    -fx-background-radius: 10px; /* Rounded corners */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); /* Shadow effect */
+    -fx-background-insets: 5; /* Insets to ensure shadow is visible */
+}

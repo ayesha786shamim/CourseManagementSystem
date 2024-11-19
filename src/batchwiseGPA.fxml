@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="batchwiseGPAcontroller">
+    <children>
+        <Pane layoutX="-15.0" layoutY="-3.0" prefHeight="595.0" prefWidth="697.0" stylesheets="@CSS/slider-panes.css">
+            <children>
+                <Label layoutX="333.0" layoutY="14.0" text="GPA" textFill="#1c00f4">
+                    <font>
+                        <Font name="MV Boli" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="50.0" layoutY="68.0" text="Batch:" textFill="#1c00f4">
+                    <font>
+                        <Font name="MV Boli" size="19.0" />
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="choiceBoxBatch" layoutX="130.0" layoutY="66.0" prefWidth="150.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="2020" />
+                            <String fx:value="2021" />
+                            <String fx:value="2022" />
+                            <String fx:value="2023" />
+                            <String fx:value="2024" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <Button layoutX="303.0" layoutY="67.0" mnemonicParsing="false" onAction="#onDisplayButtonClicked" text="DISPLAY" />
+                <Label layoutX="54.0" layoutY="121.0" text="GPA:" textFill="#1c00f4">
+                    <font>
+                        <Font name="MV Boli" size="19.0" />
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="choiceBoxGPA" layoutX="130.0" layoutY="119.0" prefWidth="150.0" stylesheets="@CSS/slider-panes.css">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="4" />
+                            <String fx:value="&lt;4" />
+                            <String fx:value="&lt;3" />
+                            <String fx:value="&lt;2" />
+                            <String fx:value="&lt;1" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <Button layoutX="303.0" layoutY="121.0" mnemonicParsing="false" onAction="#onFilterButtonClicked" text="FILTER" />
+                <TableView fx:id="tableViewCredithour" layoutX="42.0" layoutY="179.0" prefHeight="379.0" prefWidth="622.0">
+                    <columns>
+                        <TableColumn fx:id="columnUserId" prefWidth="75.0" text="UserId" />
+                        <TableColumn fx:id="columnStudentName" prefWidth="199.33334350585938" text="Student Name" />
+                        <TableColumn fx:id="columnGPA" prefWidth="198.3333740234375" text="GPA" />
+                        <TableColumn fx:id="columnCGPA" prefWidth="146.99996948242188" text="CGPA" />
+                    </columns>
+                </TableView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

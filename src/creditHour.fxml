@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="697.0" stylesheets="@CSS/slider-panes.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="creditHourController">
+   <children>
+      <Label layoutX="225.0" layoutY="91.0" text="COMPLETED CREDIT HOURS" textFill="#2701ff">
+         <font>
+            <Font name="MV Boli" size="21.0" />
+         </font></Label>
+      <TextField fx:id="creditHoursField" alignment="CENTER" editable="false" layoutX="283.0" layoutY="260.0" prefHeight="76.0" prefWidth="149.0">
+         <font>
+            <Font name="Lucida Bright" size="23.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>

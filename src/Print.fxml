@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="printController">
+    <children>
+        <Pane layoutX="1.0" layoutY="-2.0" prefHeight="559.0" prefWidth="694.0">
+            <children>
+                <Label layoutX="355.0" layoutY="14.0" text="Label" fx:id="messageLabel" />
+                <TableView layoutX="29.0" layoutY="47.0" prefHeight="435.0" prefWidth="641.0" fx:id="courseTable">
+                    <columns>
+                        <TableColumn prefWidth="81.33334541320801" text="CourseID" fx:id="courseIdColumn" />
+                        <TableColumn prefWidth="192.00000762939453" text="Course Name" fx:id="courseNameColumn" />
+                        <TableColumn prefWidth="144.0" text="Credits" fx:id="creditsColumn" />
+                        <TableColumn prefWidth="119.99996948242188" text="Semester" fx:id="semesterColumn" />
+                        <TableColumn prefWidth="101.33331298828125" text="GPA" fx:id="gpaColumn" />
+                    </columns>
+                </TableView>
+                <Button layoutX="306.0" layoutY="520.0" mnemonicParsing="false" text="PRINT" onAction="#handlePrint"/>
+                <Label layoutX="486.0" layoutY="494.0" text="CGPA:" />
+                <TextField layoutX="530.0" layoutY="490.0" prefHeight="25.0" prefWidth="116.0" fx:id="cgpaTextField" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

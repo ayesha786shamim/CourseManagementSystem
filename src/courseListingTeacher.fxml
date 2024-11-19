@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="courseListingTeacherController">
+    <children>
+        <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="697.0" stylesheets="@CSS/slider-panes.css">
+            <children>
+                <Label layoutX="268.0" layoutY="60.0" text="COURSE LISTING" textFill="#1a00ff">
+                    <font>
+                        <Font name="MV Boli" size="21.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="courseListingTable" layoutX="60.0" layoutY="128.0" prefHeight="366.0" prefWidth="584.0">
+                    <columns>
+                        <TableColumn fx:id="courseIdColumn" prefWidth="71.66665840148926" text="CourseId" />
+                        <TableColumn fx:id="courseNameColumn" prefWidth="266.6666564941406" text="Name" />
+                        <TableColumn fx:id="semesterColumn" prefWidth="125.33331298828125" text="Semester" />
+                        <TableColumn fx:id="creditColumn" prefWidth="116.0" text="Credit" />
+                    </columns>
+                </TableView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+/* styles.css */
+
+
+
+/* General pane background */
+AnchorPane {
+    -fx-background-color: #f0f0f0; /* Light background color */
+}
+
+/* Header pane styling */
+Pane > Pane {
+    -fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #ae00ff 0.0%, #ffffff 100.0%);
+}
+
+/* Header label styling */
+Pane > Pane > Label {
+    -fx-text-fill: #1a00ff; /* Header label text color */
+    -fx-font-family:  sans-serif; /* Montserrat font */
+    -fx-font-size: 23px; /* Font size for the header */
+    -fx-font-weight: bold; /* Make the font bold */
+}
+
+
+/* SplitPane styling */
+SplitPane {
+    -fx-background-color: #2c2c2c; /* Dark background color */
+}
+
+/* Divider styling */
+SplitPane > .split-pane-divider {
+    -fx-background-color: white; /* Transparent background */
+    -fx-padding: 0; /* Remove padding */
+    -fx-width: 0; /* Set width to zero */
+}
+
+/* Divider hover effect */
+SplitPane > .split-pane-divider:hover {
+    -fx-background-color: transparent; /* Transparent background on hover */
+}
+
+/* AnchorPane styling */
+AnchorPane {
+    -fx-background-color: #2c2c2c; /* Dark background color */
+}
+
+/* Button styling */
+Button {
+    -fx-background-color: transparent; /* Transparent background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-family: sans-serif; /* Montserrat font */
+    -fx-font-size: 13px;
+    -fx-border-color: transparent; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-padding: 10 20; /* Padding */
+    -fx-background-radius: 10px; /* Rounded background */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1); /* Subtle shadow effect */
+    -fx-alignment: center-left; /* Align text to the left */
+}
+
+/* Button hover effect */
+Button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1); /* Slightly visible background on hover */
+    -fx-border-color: #888888; /* Lighter border color on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 2); /* Enhanced shadow on hover */
+}
+
+
+AnchorPane#mainPane {
+    -fx-background-color: #000000;
+    -fx-background-radius: 0 70px 0 0;
+}
+
+AnchorPane#sideMenuPane {
+    -fx-background-color: #000000;
+    -fx-background-radius: 0 70px 0 0;
+}
+
+
+/* Profile pane styling */
+AnchorPane#profilePane {
+    -fx-background-color: #2c2c2c; /* Dark background color */
+}
+
+/* Lighten the shade of the left pane */
+AnchorPane > AnchorPane {
+    -fx-background-color: #3a3a3a; /* Lighter background color */
+}
+
+.label {
+    -fx-font-family: sans-serif;
+    -fx-font-weight: bold; /* Make the font bold */
+    -fx-text-fill: #ffffff; /* Text color */
+
+}

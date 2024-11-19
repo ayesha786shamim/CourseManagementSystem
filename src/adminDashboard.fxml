@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="816.0" stylesheets="@CSS/Dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminController">
+    <children>
+        <Pane prefHeight="650.0" prefWidth="999.0" stylesheets="@CSS/Dashboard.css">
+            <children>
+                <Label layoutX="91.0" layoutY="20.0" text="ADMIN DASHBOARD" textAlignment="CENTER" textFill="#1a00ff">
+                    <font>
+                        <Font name="MV Boli" size="25.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="29.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@ICONS/admin_db.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <SplitPane dividerPositions="0.17008196721311478" layoutY="64.0" prefHeight="600.0" prefWidth="999.0">
+            <items>
+                <AnchorPane fx:id="mainPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="250.0" stylesheets="@CSS/Dashboard.css">
+                    <children>
+                        <Button layoutX="4.0" layoutY="24.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#showRegisterPane" prefHeight="54.0" prefWidth="186.0" text="REGISTER" textAlignment="CENTER" textFill="#cf00ff">
+                            <font>
+                                <Font name="Perpetua Bold Italic" size="17.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@ICONS/register_user.png" />
+                                    </image></ImageView>
+                            </graphic>
+                        </Button>
+                        <Button layoutX="1.0" layoutY="512.0" mnemonicParsing="false" onAction="#logout" prefHeight="54.0" prefWidth="135.0" text="LOGOUT" textFill="#cf00ff">
+                            <font>
+                                <Font name="Perpetua Bold Italic" size="17.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@ICONS/check-out.png" />
+                                    </image></ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="727.0" stylesheets="@CSS/slider-panes.css">
+                    <children>
+                        <Pane fx:id="rightPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="727.0" stylesheets="@CSS/slider-panes.css">
+                            <children>
+                                <Label layoutX="45.0" layoutY="74.0" text="Email" />
+                                <TextField fx:id="emailField" layoutX="123.0" layoutY="69.0" prefHeight="25.0" prefWidth="205.0" promptText="Enter Email" />
+                                <Label layoutX="376.0" layoutY="78.0" text="Password" />
+                                <PasswordField fx:id="passwordField" layoutX="472.0" layoutY="69.0" prefHeight="25.0" prefWidth="205.0" promptText="Enter Password" />
+                                <Label layoutX="45.0" layoutY="153.0" text="First Name" />
+                                <TextField fx:id="firstNameField" layoutX="123.0" layoutY="142.0" prefHeight="25.0" prefWidth="205.0" promptText="Enter First Name" />
+                                <Label layoutX="376.0" layoutY="151.0" text="Last Name" />
+                                <TextField fx:id="lastNameField" layoutX="472.0" layoutY="142.0" prefHeight="25.0" prefWidth="205.0" promptText="Enter Last Name" />
+                                <Label layoutX="45.0" layoutY="223.0" text="UserName" />
+                                <TextField fx:id="usernameField" layoutX="123.0" layoutY="215.0" prefHeight="25.0" prefWidth="205.0" promptText="Enter User Name" />
+                                <Label layoutX="376.0" layoutY="224.0" text="Phone Number" />
+                                <TextField fx:id="phoneNumberField" layoutX="472.0" layoutY="215.0" prefHeight="25.0" prefWidth="205.0" promptText="Enter Phone Number" />
+                                <Label layoutX="45.0" layoutY="294.0" text="Address" />
+                                <TextField fx:id="addressField" layoutX="123.0" layoutY="286.0" prefHeight="25.0" prefWidth="516.0" promptText="Enter Address" />
+                                <Label layoutX="370.0" layoutY="354.0" text="Role" />
+                                <CheckBox fx:id="teacherCheckBox" layoutX="285.0" layoutY="383.0" mnemonicParsing="false" text="TEACHER" />
+                                <CheckBox fx:id="coordinatorCheckBox" layoutX="446.0" layoutY="383.0" mnemonicParsing="false" text="COORDINATOR" />
+                                <Label layoutX="341.0" layoutY="435.0" text="Department" />
+                                <ChoiceBox fx:id="departmentIdChoiceBox" layoutX="302.0" layoutY="458.0" prefWidth="150.0" />
+                                <Button layoutX="329.0" layoutY="537.0" mnemonicParsing="false" onAction="#register" stylesheets="@CSS/slider-panes.css" text="SUBMIT" />
+                            </children>
+                        </Pane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <Line endX="100.0" layoutX="-7.0" layoutY="36.0" rotate="90.0" startX="70.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="3.0" />
+    </children>
+</AnchorPane>

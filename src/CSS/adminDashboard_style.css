@@ -1,0 +1,100 @@
+/* styles.css */
+
+/* General pane background */
+Pane {
+    -fx-background-color: #1e1e1e; /* Dark background color */
+}
+
+/* Header pane styling */
+Pane > Pane {
+    -fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #ae00ff 0.0%, #ffffff 100.0%);
+}
+
+/* Header label styling */
+Pane > Pane > Label {
+    -fx-text-fill: #1a00ff; /* Header label text color */
+    -fx-font-family: 'Montserrat';
+    -fx-font-size: 25px;
+}
+
+/* Split pane styling */
+SplitPane {
+    -fx-background-color: #1e1e1e; /* Dark background color */
+}
+
+/* Left and right anchor panes */
+AnchorPane {
+    -fx-background-color: #1e1e1e; /* Dark background color */
+}
+
+/* Text field styling */
+TextField, PasswordField {
+    -fx-background-color: #333333; /* Dark text field background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-prompt-text-fill: #aaaaaa; /* Prompt text color */
+    -fx-border-color: #555555; /* Border color */
+    -fx-border-radius: 5px; /* Rounded corners */
+}
+
+/* Label styling */
+Label {
+    -fx-text-fill: white; /* Text color */
+    -fx-font-family: 'Montserrat';
+    -fx-font-size: 17px;
+}
+
+/* Button styling */
+Button {
+    -fx-background-color: #4a4a4a; /* Button background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-family: 'Montserrat';
+    -fx-font-size: 17px;
+    -fx-border-color: #555555; /* Border color */
+    -fx-border-radius: 5px; /* Rounded corners */
+}
+
+/* Choice box styling */
+ChoiceBox {
+    -fx-background-color: #333333; /* Dark background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-border-color: #555555; /* Border color */
+    -fx-border-radius: 5px; /* Rounded corners */
+}
+
+/* CheckBox styling */
+CheckBox {
+    -fx-text-fill: white; /* Text color */
+    -fx-font-family: 'Montserrat';
+    -fx-font-size: 12px;
+}
+
+/* Checkbox design */
+CheckBox > .box {
+    -fx-background-color: #555555; /* Checkbox background color */
+    -fx-border-color: #555555; /* Checkbox border color */
+    -fx-border-radius: 7px; /* Rounded corners */
+}
+
+/* Checkbox tick color */
+CheckBox > .box > .mark {
+    -fx-background-color: #1a1a1a; /* Tick color */
+}
+
+
+/* styles.css */
+
+/* SplitPane styling */
+SplitPane {
+    -fx-background-color: #1e1e1e; /* Dark background color */
+}
+
+/* Divider styling */
+SplitPane > .split-pane-divider {
+    -fx-background-color: #555555; /* Divider color */
+    -fx-background-insets: 0; /* Remove any insets */
+}
+
+/* Divider hover effect */
+SplitPane > .split-pane-divider:hover {
+    -fx-background-color: #888888; /* Darker color on hover */
+}

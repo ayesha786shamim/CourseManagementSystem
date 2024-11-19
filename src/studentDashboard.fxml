@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="999.0" stylesheets="@CSS/Dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentController">
+    <children>
+        <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="999.0" stylesheets="@CSS/Dashboard.css" AnchorPane.bottomAnchor="599.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="92.0" layoutY="14.0" text="STUDENT DASHBOARD" textFill="#1a00ff">
+                    <font>
+                        <Font name="MV Boli" size="20.0" />
+                    </font></Label>
+                <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="37.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@ICONS/stundent_db.png" />
+                    </image>
+                </ImageView>
+                <Line endX="100.0" layoutY="26.0" rotate="90.0" startX="70.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="3.0" />
+            </children></Pane>
+        <SplitPane dividerPositions="0.29889669007021064" layoutY="51.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="999.0" stylesheets="@CSS/Dashboard.css" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+            <items>
+                <AnchorPane fx:id="mainPane" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="264.0" stylesheets="@CSS/Dashboard.css">
+                    <children>
+                        <Button fx:id="viewProfileButton" layoutX="15.0" layoutY="19.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#loadProfile" prefHeight="43.0" prefWidth="234.0" text="PROFILE" textAlignment="CENTER" textFill="#cf00ff">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@ICONS/cat-profile.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                        <Button fx:id="courseButton" layoutX="15.0" layoutY="71.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#coursesOffered" prefHeight="43.0" prefWidth="234.0" text="Courses" textAlignment="CENTER" textFill="#cf00ff">
+                            <font>
+                                <Font name="Perpetua Bold Italic" size="17.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@ICONS/courses.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                        <Button fx:id="registerCoursesButton" layoutX="15.0" layoutY="124.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#registerCourses" prefHeight="43.0" prefWidth="234.0" text="Register Courses" textAlignment="CENTER" textFill="#cf00ff">
+                            <font>
+                                <Font name="Perpetua Bold Italic" size="17.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@ICONS/registered-course.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                        <Button fx:id="viewCourseListingButton" layoutX="15.0" layoutY="175.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#viewCourseListing" prefHeight="43.0" prefWidth="234.0" text="Course Registered" textAlignment="CENTER" textFill="#cf00ff">
+                            <font>
+                                <Font name="Perpetua Bold Italic" size="17.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@ICONS/view_courses.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                        <Button fx:id="viewGpaButton" layoutX="15.0" layoutY="225.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#viewGPA" prefHeight="43.0" prefWidth="234.0" text="View GPA" textFill="#cf00ff">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@ICONS/grades1.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                        <Button fx:id="viewWarningButton" layoutX="15.0" layoutY="276.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#viewWarnings" prefHeight="43.0" prefWidth="234.0" text="View Warning" textFill="#cf00ff">
+                            <font>
+                                <Font name="Perpetua Bold Italic" size="17.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@ICONS/warning.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                        <Button fx:id="printTranscriptButton" layoutX="15.0" layoutY="324.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#print" prefHeight="43.0" prefWidth="234.0" text="Print Transcript" textFill="#cf00ff">
+                            <font>
+                                <Font name="Perpetua Bold Italic" size="17.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true">
+                                    <image>
+                                        <Image url="@ICONS/print.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                        <Button fx:id="logoutButton" layoutX="15.0" layoutY="541.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logout" prefHeight="43.0" prefWidth="234.0" text="Logout" textFill="#cf00ff">
+                            <font>
+                                <Font name="Perpetua Bold Italic" size="17.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@ICONS/check-out.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                        <Button fx:id="completedCreditHoursButton" layoutX="15.0" layoutY="378.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#completedCreditHours" prefHeight="43.0" prefWidth="234.0" text="Completed Credit Hours" textFill="#cf00ff">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@ICONS/time.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                    </children></AnchorPane>
+                <AnchorPane fx:id="profilePane" minHeight="0.0" minWidth="0.0" prefHeight="595.0" prefWidth="697.0" stylesheets="@CSS/Dashboard.css" />
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
